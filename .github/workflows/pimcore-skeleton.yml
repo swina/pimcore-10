@@ -1,9 +1,9 @@
 name: Test Pimcore Installation
 
 on:
-    push:
-        branches:
-            - "[master]"
+  push:
+    branches:
+    - "[master]"
 
 jobs:
   test-pimcore:
