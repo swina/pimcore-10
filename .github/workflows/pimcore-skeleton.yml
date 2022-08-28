@@ -47,8 +47,6 @@ jobs:
           --user=$(id -u):$(id -g) \
           docker.io/pimcore/pimcore:PHP8.1-fpm \
             composer create-project \
-              pimcore/skeleton:@dev \
-              --repository='{"type": "path", "url": "./skeleton"}' \
               sample-project
 
     - name: Smoke-test compose file
