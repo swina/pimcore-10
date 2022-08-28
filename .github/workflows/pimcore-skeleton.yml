@@ -1,4 +1,4 @@
-name: Test Pimcore Skeleton
+name: Test Pimcore Installation
 
 on:
     push:
@@ -6,16 +6,13 @@ on:
             - "[master]"
 
 jobs:
-  test-pimcore-skeleton:
+  test-pimcore:
     runs-on: ubuntu-latest
     steps:
     # Check out the repo in a sub-dir to see if it can serve as
     # teplate for `composer create-project`
     # See: https://github.com/actions/checkout#usage
     - uses: actions/checkout@v2
-      with:
-        path: 'skeleton'
-
     - name: Pull latest pimcore image
       run: |
         # Echo commands and terminate on first error
