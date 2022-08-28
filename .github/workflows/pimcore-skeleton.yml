@@ -41,7 +41,7 @@ jobs:
         #
         # See: https://getcomposer.org/doc/03-cli.md#create-project
         # See: https://getcomposer.org/doc/05-repositories.md#path
-        docker run --rm -v `pwd`:/var/www/html pimcore/pimcore:PHP8.0-fpm composer create-project pimcore/skeleton my-project
+        docker run --rm -v `pwd`:/var/www/html pimcore/pimcore:PHP8.0-fpm composer create-project pimcore/skeleton sample-project
 
     - name: Smoke-test compose file
       run: |

@@ -1,5 +1,7 @@
 # Pimcore Project Skeleton 
 
+![Test Skeleton](https://github.com/swina/pimcore-10/actions/workflows/pimcore-skeleton/badge.svg)
+
 This skeleton should be used by experienced Pimcore developers for starting a new project from the ground up. 
 
 ## Docker
