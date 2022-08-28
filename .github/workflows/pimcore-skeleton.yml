@@ -3,7 +3,7 @@ name: Test Pimcore Installation
 on:
   push:
     branches: "[master]"
-    
+
   workflow_dispatch:
     inputs:
       logLevel:
@@ -20,6 +20,8 @@ jobs:
     # teplate for `composer create-project`
     # See: https://github.com/actions/checkout#usage
     - uses: actions/checkout@v2
+      with:
+        path: 'skeleton'
     - name: Pull latest pimcore image
       run: |
         # Echo commands and terminate on first error
