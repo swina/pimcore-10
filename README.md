@@ -58,3 +58,8 @@ Start the needed services with `docker-compose up -d`
     * The frontend: <http://localhost:9000>
     * The admin interface, using the credentials you have chosen above:
       <http://localhost:9000/admin>
+
+
+## Github Actions
+
+Included is a basic github action to test 
