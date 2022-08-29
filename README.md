@@ -51,9 +51,18 @@ After cloning the repo:
 
     `docker-compose exec php-fpm ./bin/console pimcore:bundle:install PimcoreDataHubBundle`
 
+7. Enable folder var to www-data user
+
+    `docker-compose exec php-fpm chown -R www-data:www-data var`
+
 ## Run docker (after 1st run)
 
 Start the needed services with `docker-compose up -d`
+
+
+**If you get permission problems on var folder run :**
+
+    `docker-compose exec php-fpm chown -R www-data:www-data var`
 
 
 ## You can now visit your pimcore instance:
