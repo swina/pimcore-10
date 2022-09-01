@@ -1,0 +1,240 @@
+pimcore_data_hub:
+    configurations:
+        registrations:
+            general:
+                active: true
+                type: graphql
+                name: registrations
+                description: ''
+                group: ''
+                sqlObjectCondition: ''
+                modificationDate: 1662040371
+                path: null
+                createDate: 1662025342
+            schema:
+                queryEntities:
+                    registrations:
+                        id: registrations
+                        name: registrations
+                        columnConfig:
+                            columns:
+                                -
+                                    attributes:
+                                        attribute: firstname
+                                        label: Firstname
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: lastname
+                                        label: Lastname
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: dob
+                                        label: DOB
+                                        dataType: date
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: email
+                                        label: Email
+                                        dataType: email
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: country
+                                        label: Country
+                                        dataType: country
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: city
+                                        label: City
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: zip
+                                        label: Zip
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: jobposition
+                                        label: 'Job Position'
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: company
+                                        label: Company
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: carBrand
+                                        label: 'Car Brand'
+                                        dataType: select
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: carModel
+                                        label: 'Car Model'
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: buyFerrari
+                                        label: 'Buy Ferrari'
+                                        dataType: checkbox
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: mobility
+                                        label: Mobility
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: id
+                                        label: id
+                                        dataType: system
+                                    isOperator: false
+                mutationEntities:
+                    registrations:
+                        id: registrations
+                        name: registrations
+                        update: true
+                        create: true
+                        columnConfig:
+                            columns:
+                                -
+                                    attributes:
+                                        attribute: firstname
+                                        label: Firstname
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: lastname
+                                        label: Lastname
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: dob
+                                        label: DOB
+                                        dataType: date
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: email
+                                        label: Email
+                                        dataType: email
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: country
+                                        label: Country
+                                        dataType: country
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: city
+                                        label: City
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: zip
+                                        label: Zip
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: jobposition
+                                        label: 'Job Position'
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: company
+                                        label: Company
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: carBrand
+                                        label: 'Car Brand'
+                                        dataType: select
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: carModel
+                                        label: 'Car Model'
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: buyFerrari
+                                        label: 'Buy Ferrari'
+                                        dataType: checkbox
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: mobility
+                                        label: Mobility
+                                        dataType: input
+                                    isOperator: false
+                specialEntities:
+                    document:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+                    document_folder:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+                    asset:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+                    asset_folder:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+                    asset_listing:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+                    object_folder:
+                        read: true
+                        create: false
+                        update: false
+                        delete: false
+            security:
+                method: datahub_apikey
+                apikey: 8fd749c9b51d737cf70d7bdda01c11fc
+                skipPermissionCheck: false
+                disableIntrospection: false
+            workspaces:
+                asset: {  }
+                document: {  }
+                object:
+                    -
+                        read: true
+                        cpath: /registrations
+                        create: true
+                        update: true
+                        delete: false
+                        id: extModel2704-2
+            permissions:
+                user: {  }
+                role: {  }
